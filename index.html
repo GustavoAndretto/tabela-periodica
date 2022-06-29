@@ -10,23 +10,31 @@
 <body>
     <div class="container">
         <h1 class="title">Tabela Periódica dos Elementos</h1>
-        <ol id="ptable" translate="no"></ol>
+        <ol id="ptable"></ol>
         <h3>Legenda</h3>
-        <ul class="legend-list">
-            <li><span class="legend-block noble-gas"></span>Gás nobre</li>
-            <li><span class="legend-block halogen"></span>Halogênio</li>
-            <li><span class="legend-block alkaline-earth-metal"></span>Metal alcalino terroso</li>
-            <li><span class="legend-block alkali-metal"></span>Metal alcalino</li>
-            <li><span class="legend-block non-metal"></span>Não metal</li>
-            <li><span class="legend-block metalloid"></span>Semimetal</li>
-            <li><span class="legend-block metal"></span>Metal</li>
-            <li><span class="legend-block transition-metal"></span>Metal de transição</li>
-            <li><span class="legend-block post-transition-metal"></span>Outros metais</li>
-            <li><span class="legend-block lanthanoid"></span>Lantanídeo</li>
-            <li><span class="legend-block actinoid"></span>Actinídeo</li>
-        </ul>
+        <div class="d-flex">
+            <div class="element large blank-element">
+                <b>Nº Atômico</b>
+                <abbr>Símbolo</abbr>
+                <span>Nº de Massa</span>
+            </div>
+            <ul class="legend-list">
+                <li><span class="legend-block noble-gas"></span>Gás nobre</li>
+                <li><span class="legend-block halogen"></span>Halogênio</li>
+                <li><span class="legend-block alkaline-earth-metal"></span>Metal alcalino terroso</li>
+                <li><span class="legend-block alkali-metal"></span>Metal alcalino</li>
+                <li><span class="legend-block non-metal"></span>Não metal</li>
+                <li><span class="legend-block metalloid"></span>Semimetal</li>
+                <li><span class="legend-block metal"></span>Metal</li>
+                <li><span class="legend-block transition-metal"></span>Metal de transição</li>
+                <li><span class="legend-block post-transition-metal"></span>Outros metais</li>
+                <li><span class="legend-block lanthanoid"></span>Lantanídeo</li>
+                <li><span class="legend-block actinoid"></span>Actinídeo</li>
+            </ul>
+        </div>
         <h3>Detalhes do elemento selecionado</h3>
         <ul id="dlist"></ul>
+        
     </div>
     <script src="./resources/js//main.js"></script>
 </body>

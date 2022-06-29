@@ -72,6 +72,20 @@ ol {
     display: block;
 }
 
+.large {
+    width: 100px !important;
+    height: 100px !important;
+    margin-right: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.blank-element {
+    border: 2px solid #000;
+}
+
 .alkaline-earth-metal {
     background-color: rgb(153, 254, 255, 0.5);
     border: 2px solid #99FEFF;
@@ -184,6 +198,8 @@ ol {
 }
 
 .legend-list {
+    display: block;
+    width: 100%;
     column-count: 4;
 }
 
