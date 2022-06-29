@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+h2, h3 {
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+    padding: 3px 0;
+}
+
+.element:hover, .element:active {
+    transform: scale(150%);
+    cursor:pointer;
+}
+
+.element b {
+    font-size: 0.6rem;
+    display: block;
+}
+
+.element abbr {
+    display: block;
+    font-size: 1.3rem;
+    line-height: 20px;
+}
+
+.element span {
+    font-size: 0.6rem;
+    display: block;
+}
+
+.alkaline-earth-metal {
+    background-color: rgb(153, 254, 255, 0.5);
+    border: 2px solid #99FEFF;
+}
+
+.alkali-metal {
+    background-color: rgb(148, 179, 253, 0.5);
+    border: 2px solid #94B3FD;
+}
+
+.noble-gas {
+    background-color: rgb(185, 131, 255, 0.5);
+    border: 2px solid #B983FF;
+}
+
+.lanthanoid {
+    background-color: rgb(183, 229, 221, 0.5);
+    border: 2px solid #B7E5DD;
+}
+
+.non-metal {
+    background-color: rgb(250, 244, 183, 0.5);
+    border: 2px solid #FAF4B7;
+}
+
+.metalloid {
+    background-color: rgb(246, 198, 234, 0.5);
+    border: 2px solid #F6C6EA;
+}
+
+.halogen {
+    background-color: rgb(146, 186, 146, 0.2);
+    border: 2px solid #92BA92;
+}
+
+.metal {
+    background-color: rgb(120, 147, 138, 0.5);
+    border: 2px solid #78938A;
+}
+
+.transition-metal {
+    background-color: rgb(203, 198, 246, 0.5);
+    border: 2px solid #cbc6f6;
+}
+
+.post-transition-metal {
+    background-color: rgb(82, 94, 117, 0.5);
+    border: 2px solid #525E75;
+    
+}
+
+.actinoid {
+    background-color: rgb(131, 255, 166, 0.5);
+    border: 2px solid #83ffa6;
+}
+
+#ptable {
+    display: grid;
+    gap: .25rem;
+}
+
+#ptable li:nth-child(2) {
+    grid-column-start: 18;
+}
+
+#ptable li:nth-child(5) {
+    grid-column-start: 13;
+}
+
+#ptable li:nth-child(13) {
+    grid-column-start: 13;
+}
+
+#ptable li:nth-child(72) {
+    grid-column-start: 4;
+}
+
+#ptable li:nth-child(104) {
+    grid-column-start: 4;
+}
+
+#ptable li:nth-child(n+57):nth-last-child(n+48) {
+    grid-row-start: 8;
+}
+
+#ptable li:nth-child(n+89):nth-last-child(n+16) {
+    grid-row-start: 9;
+}
+
+#ptable:before {
+    display: block;
+    content: '';
+    grid-row: 8 / 10;
+    grid-column: 1 / 4;
+}
+
+#dlist {
+    padding: 0;
+    list-style: none;
+    column-count: 3;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+#dlist li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.legend-list {
+    column-count: 4;
+}
+
+.legend-list li {
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    height: 30px;
+}
+
+.legend-block {
+    display: block;
+    width: 20px;
+    height: 10px;
+    margin-right: 3px;
+}
