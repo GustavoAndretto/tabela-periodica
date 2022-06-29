@@ -32,7 +32,7 @@ function fillDescription(id) {
     html += `<li><div>Tipo de Ligação:</div><div>${chem.bondingType}</div></li>`;
     html += `<li><div>Ponto de Fusão:</div><div>${chem.meltingPoint}${chem.meltingPoint == 'unknown' ? '' : ' K'}</div></li>`;
     html += `<li><div>Ponto de Ebulição:</div><div>${chem.boilingPoint}${chem.boilingPoint == 'unknown' ? '' : ' K'}</div></li>`;
-    html += `<li><div>Densidade:</div><div>${chem.density}${chem.density == 'unknown' ? '' : ' g/cm<sup>3</sup>'}</div></li>`;
+    html += `<li><div>Densidade:</div><div>${chem.density}${chem.density == 'unknown' ? '' : ' g/cm<sup>-3</sup>'}</div></li>`;
     html += `<li><div>Bloco de Grupo:</div><div>${chem.groupBlock}</div></li>`;
     html += `<li><div>Ano de Descoberta:</div><div>${chem.yearDiscovered}</div></li>`;
     html += `<li><div>Bloco:</div><div>${chem.block}</div></li>`;
